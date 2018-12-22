@@ -3,6 +3,8 @@
 ## Algorithm
 The algorithm used for this project is MADDPG, Multi Agent Deep Deterministic Policy Gradients, which has been shown to be very effective at solving continuous action space environments, like the Tennis environment.
 
+In this project, two agents with separate actor and critics interact with the environment while adding their experiences to a shared replay buffer. The replay buffer contains all the information from each turn of both agents including states, actions and rewards. From this buffer, each agent is able to sample in order to learn the best action for a particular state. Noise is also added in order to help each agent explore, but it is reduced over time with a decay factor that gradually reduces the effect of the noise on the agents' actions.
+
 ## Hyperparameters
 The hyperparameters for the algorithm were set as follows:
 
@@ -23,6 +25,7 @@ The hyperparameters for the algorithm were set as follows:
 * Learning steps (sets how often the gradient is updated-expressed in times per timestep) 3
 
 * Noise weight starts at 1.0, decays to a minimum of 0.1
+
 * Noise decay .9999
 
 ## Neural Network Architecture

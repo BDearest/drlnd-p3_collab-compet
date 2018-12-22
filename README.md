@@ -13,3 +13,5 @@ In order to run this agent, one must have Python 3, PyTorch, Unity, Jupyter Note
 * [Windows 64-bit](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
 
 Once the environment is downloaded, it should be put in the root directory of this cloned repository and unzipped.
+
+To run the code, open Tennis.ipynb in Jupyter Notebook and run all cells.
